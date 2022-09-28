@@ -1,0 +1,12 @@
+import 'dart:io';
+
+void main() {    
+    stdout.write("What's your name? ");
+    String name = stdin.readLineSync();
+
+    print("What is your age?");
+    int age = int.parse(stdin.readLineSync());
+
+    int yearsForHundered = 100 - age;
+    print("$name, You will be 100 in $yearsForHundered");
+}
